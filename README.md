@@ -17,4 +17,10 @@ This repo is used to store codes of spring.
 - Object relational mapping
 - Mapping of DB and Java Objects
 - implementable using JPA or Hibernate
--
+
+
+## Hibernate Template
+Example:
+- ProductDao (interface) depends on HibernateTemplate
+- ProductDaoImpl implements ProductDao
+- HibernateTemplate uses SessionFactory Bean

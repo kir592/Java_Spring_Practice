@@ -1,5 +1,5 @@
 # Java_Spring_Practice
-This repo is used to store codes of spring.
+This repo is used to store codes of spring. 
 
 
 # Bean
@@ -16,4 +16,17 @@ This repo is used to store codes of spring.
 # ORM
 - Object relational mapping
 - Mapping of DB and Java Objects
-- implementable using JPA or Hibernate
+- JPA is the standard
+- implementable using Hibernate, TopLink or JDO
+
+
+## Hibernate Template
+Example:
+- ProductDao (interface) depends on HibernateTemplate
+- ProductDaoImpl implements ProductDao
+- HibernateTemplate uses SessionFactory Bean
+  
+### Annotation
+- @Entity and @Id mandatory, whereby @Id is the primary key
+- @Table(name="tablename") if the class has a different name than the table
+- @Column(name="attributename") if the variable have different names than the columns in the table

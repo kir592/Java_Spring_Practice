@@ -56,7 +56,27 @@ https://github.com/kir592/Java_Spring_Practice/blob/174915d3cff5bd1bb74c5cd3f42b
 - Inside the controller, you can add primitive data or objects to the modelview object
 https://github.com/kir592/Java_Spring_Practice/blob/174915d3cff5bd1bb74c5cd3f42b05e8263a2bc5/MVC/src/main/java/com/bharath/spring/springmvc/controller/HelloController.java#L10-L18
 - the data or objects can be accessed by request.getAttribte("key")
-  https://github.com/kir592/Java_Spring_Practice/blob/174915d3cff5bd1bb74c5cd3f42b05e8263a2bc5/MVC/src/main/webapp/WEB-INF/views/hello.jsp#L11-L18
+https://github.com/kir592/Java_Spring_Practice/blob/174915d3cff5bd1bb74c5cd3f42b05e8263a2bc5/MVC/src/main/webapp/WEB-INF/views/hello.jsp#L11-L18
+  
+## Sending data from UI to Controller
+### Via HTML Form
+- A Controller returns a form, which user will fill out
+https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/webapp/WEB-INF/views/userReg.jsp#L10-L18
+https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/UserController.java#L11-L24
   
   
-
+- A Class has to be created that matches the form
+https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/dto/User.java#L3-L12
+  
+  
+#### Request Parameter
+- You can have parameters in the URI with  @RequestParam("key") int id
+https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/RequestParamsController.java#L11-L20
+  
+  
+## ModelMap and String View
+- The "ModelAndView Object" connects the Model and View in a single object, in cases where we don't need the data (the model), we still have to create the ModelAndView object
+- Hence, instead of creating a "ModelAndView Object" you can use "ModelMap and String View" instead
+https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/UserController.java#L14-L17
+https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/UserController.java#L19-L24
+  

@@ -30,3 +30,17 @@ Example:
 - @Entity and @Id mandatory, whereby @Id is the primary key
 - @Table(name="tablename") if the class has a different name than the table
 - @Column(name="attributename") if the variable have different names than the columns in the table
+  
+  
+# Spring MVC
+- JSP uses <% ... %> inside the view
+- A class is defined as a controller by @Controller
+- A JSP page is assigned to each controller via @RequestMapping("/mypage")
+  
+## Sending data from Controller to UI
+- Inside the controller, you can add primitive data or objects to the modelview object  
+- the data or objects can be accessed by request.getAttribte("key")
+  
+  
+  
+

@@ -99,10 +99,10 @@ https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff
   
   https://github.com/kir592/Java_Spring_Practice/blob/eea4cb2c63c0d612cedacf1d26e4528b409f69cf/MVC_with_ORM/src/main/java/com/bharath/spring/springmvcorm/user/controller/UserController.java#L43-L53
   
-  # AOP (Aspect Oriented Programming)
-  - Applying external services to classes without changing the code
-  - "Aspect" is a class that includes external service
-  - "Advice" is a method inside an aspect class
-  - "Point Cut" are methods that needs "Advices"
-  - "Joint Point" is the mapping of Point Cut and Advice
-  - "Weaving" is the process of adding Advices to the target object
+# AOP (Aspect Oriented Programming)
+- Applying external services to classes without changing the code
+- "Aspect" is a class that includes external service
+- "Advice" is a method inside an aspect class
+- "Point Cut" are methods that needs "Advices"
+- "Joint Point" is the mapping of Point Cut and Advice
+- "Weaving" is the process of adding Advices to the target object

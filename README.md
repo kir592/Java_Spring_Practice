@@ -3,7 +3,7 @@ This repo is used to store practice code of spring.
 
 
 # Bean
-- Can be defined with tags in the xml config file or use the annotation @Component("bean-name")
+- Can be defined with tags in the xml config file or use the annotation `@Component("bean-name")`
 
 ## Example via XML
 https://github.com/kir592/Java_Spring_Practice/blob/cb38fb72cff3a73602de314d5c68a576234b2304/Core/src/main/java/com/spring/springcore/reftypes/studentconfig.xml#L11
@@ -15,18 +15,18 @@ https://github.com/kir592/Java_Spring_Practice/blob/5bd578425e4276f817c44b84e27b
 https://github.com/kir592/Java_Spring_Practice/blob/5bd578425e4276f817c44b84e27bddad44e1476b/Core%20Advanced/src/main/java/com/spring/springcoreadvanced/objviaannotation/config.xml#L12
 
 ## ...
-- The default values of variables of a class can be set using <value> tag or @Value annotation
-- Objects within a class can be set by <ref bean=bean-name/> tag or @Autowired
-- @Scope("prototype") or @Scope("singleton") tells spring container if multiple object can be initialized .
+- The default values of variables of a class can be set using `<value>` tag or `@Value` annotation
+- Objects within a class can be set by `<ref bean=bean-name/>` tag or `@Autowired`
+- `@Scope("prototype")` or `@Scope("singleton")` tells spring container if multiple object can be initialized .
 - Properties can be accessed through a property list
 https://github.com/kir592/Java_Spring_Practice/blob/5bd578425e4276f817c44b84e27bddad44e1476b/Core%20Advanced/src/main/java/com/spring/springcore/propertyfiletest/config.xml#L12-L24
   
   
 
 # Bean Life Cycle Methods
-- Within bean add the following: init-method="init" and destroy-method="destroy" will call respective methods
+- Within bean add the following: `init-method="init"` and `destroy-method="destroy"` will call respective methods
 - Destroy method is not invoked by default (has to be set)
-- Usable with annotation @PostConstruct and @PreDestroy
+- Usable with annotation `@PostConstruct` and `@PreDestroy`
 
 # ORM
 - Object relational mapping
@@ -42,15 +42,15 @@ Example:
 - HibernateTemplate uses SessionFactory Bean
   
 ### Annotation
-- @Entity and @Id mandatory, whereby @Id is the primary key
-- @Table(name="tablename") if the class has a different name than the table
-- @Column(name="attributename") if the variable have different names than the columns in the table
+- `@Entity` and `@Id` mandatory, whereby @Id is the primary key
+- `@Table(name="tablename")` if the class has a different name than the table
+- `@Column(name="attributename")` if the variable have different names than the columns in the table
 https://github.com/kir592/Java_Spring_Practice/blob/174915d3cff5bd1bb74c5cd3f42b05e8263a2bc5/ORM_via_Hibernate/src/main/java/com/spring/springorm/product/entity/Product.java#L8-L19
   
 # Spring MVC
-- JSP uses <% ... %> inside the view
-- A class is defined as a controller by @Controller
-- A JSP page is assigned to each controller via @RequestMapping("/mypage")
+- JSP uses `<% ... %>` inside the view
+- A class is defined as a controller by `@Controller`
+- A JSP page is assigned to each controller via `@RequestMapping("/mypage")`
   
 ## Sending data from Controller to UI
 - Inside the controller, you can add primitive data or objects to the modelview object
@@ -70,7 +70,7 @@ https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff
   
   
 #### Request Parameter
-- You can have parameters in the URI with  @RequestParam("key") int id
+- You can have parameters in the URI with `@RequestParam("key")` int id
 https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/RequestParamsController.java#L11-L20
   
   
@@ -86,8 +86,8 @@ https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff
   
 ## JQuery
 - Javascript framework
-- document.getElementById("userId") turns to ${"#userId"}
-- AJAX calls via $.ajax({...})
+- `document.getElementById("userId")` turns to `${"#userId"}`
+- AJAX calls via `$.ajax({...})`
 - The call has 3 parameters, the url, the data as key value pair and a function that will be called when the response comes back
 - Example:  
   

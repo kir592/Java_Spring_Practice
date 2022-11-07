@@ -80,3 +80,22 @@ https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff
 https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/UserController.java#L14-L17
 https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff48ac9d7b801a/MVC/src/main/java/com/bharath/spring/springmvc/controller/UserController.java#L19-L24
   
+# AJAX (Asynchronous JavaScript and XML)
+- With AJAX Calls you can perform multiple requests without waiting for a response like it is in the case of synchronous calls. One usecase would be to check whether a user already exist before the user presses the "register" button
+- You can perform AJAX calls using JQuery
+  
+## JQuery
+- Javascript framework
+- document.getElementById("userId") turns to ${"#userId"}
+- AJAX calls via $.ajax({...})
+- The call has 3 parameters, the url, the data as key value pair and a function that will be called when the response comes back
+- Example:  
+  
+  ### Include jquery library in the header block
+  https://github.com/kir592/Java_Spring_Practice/blob/eea4cb2c63c0d612cedacf1d26e4528b409f69cf/MVC_with_ORM/src/main/webapp/WEB-INF/jsps/userReg.jsp#L10-L12
+  
+  ### Function should be executed when document is ready and when there is a change in the id field
+  https://github.com/kir592/Java_Spring_Practice/blob/eea4cb2c63c0d612cedacf1d26e4528b409f69cf/MVC_with_ORM/src/main/webapp/WEB-INF/jsps/userReg.jsp#L12-L35
+  
+  https://github.com/kir592/Java_Spring_Practice/blob/eea4cb2c63c0d612cedacf1d26e4528b409f69cf/MVC_with_ORM/src/main/java/com/bharath/spring/springmvcorm/user/controller/UserController.java#L43-L53
+  

@@ -106,3 +106,20 @@ https://github.com/kir592/Java_Spring_Practice/blob/7ea8a8cf25995ce479dd9a4716ff
 - "Point Cut" are methods that needs "Advices"
 - "Joint Point" is the mapping of Point Cut and Advice
 - "Weaving" is the process of adding Advices to the target object
+
+
+## Specifying Point Cuts
+
+Example:
+- `public void *Id()` means that any method that ends with "Id" without parameter
+- `public  **()` means that any method with any return type without parameter
+- `public void get(..)` the method get() with any number of parameter
+
+## Frameworks for AOP
+- AspectJ
+- Spring AOP
+- JBoss AOP
+
+## AspectJ Annotation
+- Marking aspect with `@Aspect`
+- Marking adviced with `@Before` `@After` `@AfterReturning` `@Around` `@AfterThrowing`
